@@ -3,10 +3,10 @@ class StringBuilder{
   constructor(initialValue ){
     this.#value=Array.from(initialValue);
   }
-  getValue=() => {return this.#value.join('');}
-  padEnd=str=>{this.#value.push(str);}
-padStart= str =>{this.#value.unshift(str);}
-padBoth = str => {this.padStart(str);this.padEnd(str);}
+  getValue()  {return this.#value.join('');}
+  padEnd(str){this.#value.push(str);}
+padStart(str){this.#value.unshift(str);}
+padBoth(str){this.padStart(str);this.padEnd(str);}
 }
 
 
